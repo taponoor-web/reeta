@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
-    <!-- Google tag (gtag.js) - كود التتبع الرئيسي -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16663483973"></script>
+    <!-- Google tag (gtag.js) - كود التتبع الجديد -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11248543839"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'AW-16663483973');
+      gtag('config', 'AW-11248543839');
     </script>
 
-    <!-- Event snippet for نقرة صادرة إلى الخارج conversion page (الأول) -->
+    <!-- Event snippet for نقرة صادرة إلى الخارج conversion page -->
     <script>
     function gtag_report_conversion(url) {
       var callback = function () {
@@ -22,32 +22,14 @@
         }
       };
       gtag('event', 'conversion', {
-          'send_to': 'AW-16663483973/4XXBCJmki7kcEMWs4ok-',
-          'value': 1.0,
-          'currency': 'USD',
+          'send_to': 'AW-11248543839/IJcuCJuGi7ocEN_Q3PMp',
           'event_callback': callback
       });
       return false;
     }
     </script>
 
-    <!-- Event snippet for نقرة صادرة إلى الخارج 2 conversion page (الثاني) -->
-    <script>
-    function gtag_report_conversion_2(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-16663483973/CZYtCJ7inbocEMWs4ok-',
-          'event_callback': callback
-      });
-      return false;
-    }
-    </script>
-
-    <!-- دالة معالجة مكالمات الهاتف بشكل آمن للايفون مع تتبع التحويل -->
+    <!-- دالة معالجة مكالمات الهاتف بشكل آمن مع تتبع التحويل -->
     <script>
     function makePhoneCall(phoneNumber) {
       var cleanNumber = String(phoneNumber).replace(/[\s\-]/g, '');
@@ -60,12 +42,9 @@
       }
       var telUrl = 'tel:' + cleanNumber;
       
-      // تتبع كلا الحدثين للمكالمات الهاتفية
+      // تتبع حدث التحويل للمكالمات الهاتفية
       if (typeof gtag_report_conversion === 'function') {
         gtag_report_conversion(telUrl);
-      }
-      if (typeof gtag_report_conversion_2 === 'function') {
-        gtag_report_conversion_2(telUrl);
       }
       
       setTimeout(function() {
@@ -75,13 +54,10 @@
       return false;
     }
 
-    // دالة معالجة روابط واتساب مع تتبع كلا الحدثين
+    // دالة معالجة روابط واتساب مع تتبع التحويل
     function trackWhatsAppClick(url) {
       if (typeof gtag_report_conversion === 'function') {
         gtag_report_conversion(url);
-      }
-      if (typeof gtag_report_conversion_2 === 'function') {
-        gtag_report_conversion_2(url);
       }
       setTimeout(function() {
         window.open(url, '_blank');
@@ -930,14 +906,10 @@
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            gtag('event', 'conversion', {
-                'send_to': 'AW-16663483973/4XXBCJmki7kcEMWs4ok-',
-                'value': 1.0,
-                'currency': 'USD'
-            });
-            gtag('event', 'conversion', {
-                'send_to': 'AW-16663483973/CZYtCJ7inbocEMWs4ok-'
-            });
+            // تتبع تحويل نموذج الاتصال
+            if (typeof gtag_report_conversion === 'function') {
+                gtag_report_conversion();
+            }
             alert('شكراً لتواصلكم مع شركة الأمان للتنظيف! سنقوم بالاتصال بكم لتأكيد الطلب وتحديد موعد الخدمة في أقرب وقت.');
             this.reset();
         });
@@ -956,9 +928,6 @@
             if (typeof gtag_report_conversion === 'function') {
                 gtag_report_conversion(telUrl);
             }
-            if (typeof gtag_report_conversion_2 === 'function') {
-                gtag_report_conversion_2(telUrl);
-            }
             
             setTimeout(function() {
                 window.location.href = telUrl;
@@ -969,9 +938,6 @@
         function trackWhatsAppClick(url) {
             if (typeof gtag_report_conversion === 'function') {
                 gtag_report_conversion(url);
-            }
-            if (typeof gtag_report_conversion_2 === 'function') {
-                gtag_report_conversion_2(url);
             }
             setTimeout(function() {
                 window.open(url, '_blank');
