@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- Google tag (gtag.js) - كود التتبع الرئيسي -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16663483973"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16663483973');
+    </script>
+
+    <!-- Event snippet for نقرة صادرة إلى الخارج conversion page (الأول) -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16663483973/4XXBCJmki7kcEMWs4ok-',
+          'value': 1.0,
+          'currency': 'USD',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
+    <!-- Event snippet for نقرة صادرة إلى الخارج 2 conversion page (الثاني) -->
+    <script>
+    function gtag_report_conversion_2(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16663483973/CZYtCJ7inbocEMWs4ok-',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
+    <!-- دالة معالجة مكالمات الهاتف بشكل آمن للايفون مع تتبع التحويل -->
+    <script>
+    function makePhoneCall(phoneNumber) {
+      var cleanNumber = String(phoneNumber).replace(/[\s\-]/g, '');
+      if (!cleanNumber.startsWith('+') && !cleanNumber.startsWith('00')) {
+        if (cleanNumber.startsWith('965')) {
+          cleanNumber = '+' + cleanNumber;
+        } else {
+          cleanNumber = '+965' + cleanNumber;
+        }
+      }
+      var telUrl = 'tel:' + cleanNumber;
+      
+      // تتبع كلا الحدثين للمكالمات الهاتفية
+      if (typeof gtag_report_conversion === 'function') {
+        gtag_report_conversion(telUrl);
+      }
+      if (typeof gtag_report_conversion_2 === 'function') {
+        gtag_report_conversion_2(telUrl);
+      }
+      
+      setTimeout(function() {
+        window.location.href = telUrl;
+      }, 100);
+      
+      return false;
+    }
+
+    // دالة معالجة روابط واتساب مع تتبع كلا الحدثين
+    function trackWhatsAppClick(url) {
+      if (typeof gtag_report_conversion === 'function') {
+        gtag_report_conversion(url);
+      }
+      if (typeof gtag_report_conversion_2 === 'function') {
+        gtag_report_conversion_2(url);
+      }
+      setTimeout(function() {
+        window.open(url, '_blank');
+      }, 100);
+      return false;
+    }
+    </script>
+
+    <!-- بيانات منظمة لتحسين SEO لخدمات التنظيف والساعه في الكويت -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HousekeepingServiceProvider",
+        "name": "شركة الأمان للتنظيف - خدم بالساعات الكويت",
+        "description": "شركة الأمان للتنظيف - أفضل خدم بالساعه في الكويت، عماله منزليه بالساعه، خدامة بالساعة، خدم تنظيف بالساعات، مكتب خدم بالساعات متخصص في تنظيف الشقق والمنازل والمكاتب.",
+        "telephone": "+96566172896",
+        "areaServed": "Kuwait",
+        "serviceType": "خدم بالساعات - عماله منزليه بالساعه - خدامة بالساعة - خدم تنظيف بالساعات - خدم للتنظيف - مكتب خدم بالساعات",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Kuwait"
+        },
+        "openingHours": "Mo-Su 08:00-22:00"
+    }
+    </script>
+
+    <title>شركة الأمان للتنظيف | خدم بالساعات الكويت | عمالة منزلية بالساعة | اتصل 66172896</title>
+    <meta name="description" content="شركة الأمان للتنظيف ✔ خدم بالساعه في الكويت ✔ عماله منزليه بالساعه ✔ خدامة بالساعة ✔ خدم تنظيف بالساعات ✔ مكتب خدم بالساعات ✔ تنظيف الشقق والمنازل والمكاتب ✔ اتصل الآن 66172896">
+    <meta name="keywords" content="خدم بالساعات, خدم بالساعه في الكويت, عماله منزليه بالساعه, خدامة بالساعة, خدم تنظيف بالساعات, مكتب خدم بالساعات, خدم للتنظيف, شركة تنظيف الكويت">
+    <meta name="location" content="Kuwait">
+
+    <!-- تحسين الخطوط والتحميل -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-blue: #1E5A99;
+            --dark-blue: #0A3A5A;
+            --light-blue: #E8F0FE;
+            --accent-green: #2ECC71;
+            --accent-teal: #1ABC9C;
+            --clean-white: #FFFFFF;
+            --soft-gray: #F5F7FA;
+            --text-dark: #2C3E50;
+            --call-green: #27AE60;
+            --highlight-yellow: #F39C12;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            background: var(--soft-gray);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        .scrolling-banner {
+            background: var(--dark-blue);
+            color: white;
+            padding: 12px 0;
+            overflow: hidden;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border-bottom: 2px solid var(--accent-green);
+        }
+        
+        .scrolling-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll 20s linear infinite;
+            padding-left: 100%;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .navbar {
+            background: var(--primary-blue);
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            color: var(--accent-green);
+            font-weight: 900;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .phone-display {
+            color: var(--accent-green);
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+        }
+        
+        .phone-display:hover {
+            transform: scale(1.05);
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #1E5A99, #0A3A5A);
+            color: white;
+            padding: 6rem 2rem 8rem;
+            text-align: center;
+            min-height: 65vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 58, 90, 0.85);
+        }
+        
+        .hero h1, .hero p, .hero-buttons {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--light-blue);
+            font-weight: 500;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .hero-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.9rem 1.8rem;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            background: var(--accent-green);
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
+            will-change: transform;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .hero-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .secondary-btn {
+            background: var(--accent-teal);
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .services {
+            padding: 5rem 2rem;
+            background: var(--soft-gray);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-blue);
+            font-size: 2rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--accent-green);
+            margin: 0.5rem auto 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            border-top: 4px solid var(--accent-green);
+            will-change: transform;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+        }
+        
+        .service-list {
+            padding-right: 20px;
+            line-height: 1.9;
+            font-size: 1rem;
+        }
+        
+        .service-list li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-right: 30px;
+        }
+        
+        .service-list li::before {
+            content: "✓";
+            color: var(--accent-green);
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+        }
+        
+        .floating-btns {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            gap: 1rem;
+        }
+        
+        .floating-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1.1rem 2rem;
+            border-radius: 50px;
+            color: white;
+            background: var(--accent-green);
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .floating-secondary {
+            background: var(--accent-teal);
+        }
+        
+        .floating-whatsapp {
+            background: #25D366;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+        
+        .why-us {
+            padding: 5rem 2rem;
+            background: white;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3rem auto 0;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+        }
+        
+        .simple-footer {
+            background: var(--primary-blue);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .simple-footer p {
+            margin: 0.5rem 0;
+            color: var(--light-blue);
+        }
+        
+        .footer-phone {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .footer-phone:hover {
+            transform: scale(1.05);
+            color: var(--accent-green);
+        }
+        
+        .search-tags {
+            background-color: #f8f9fa;
+            padding: 25px;
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .service-tag {
+            background: linear-gradient(135deg, #1E5A99 0%, #2ECC71 100%);
+            padding: 10px 20px;
+            border-radius: 30px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid #F39C12;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            cursor: default;
+            transition: transform 0.2s;
+        }
+        
+        .service-tag:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .types-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(to bottom, var(--soft-gray), white);
+        }
+        
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .type-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            border-bottom: 3px solid var(--accent-green);
+        }
+        
+        .type-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .packages {
+            padding: 5rem 2rem;
+            background: var(--soft-gray);
+        }
+        
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .package-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s;
+            border-top: 4px solid var(--accent-green);
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .package-title {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+        }
+        
+        .package-price {
+            font-size: 1.3rem;
+            color: var(--accent-green);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        
+        .package-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .package-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .package-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--accent-green);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .package-btn:hover {
+            background: var(--accent-teal);
+            transform: scale(1.05);
+        }
+        
+        .testimonials {
+            padding: 5rem 2rem;
+            background: white;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-card {
+            background: var(--soft-gray);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--accent-green);
+        }
+        
+        .contact-form {
+            padding: 5rem 2rem;
+            background: var(--soft-gray);
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: var(--accent-green);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background: var(--accent-teal);
+            transform: scale(1.02);
+        }
+        
+        .hours-badge {
+            background: var(--accent-green);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1rem;
+            animation: pulse 2s infinite;
+        }
+        
+        .contact-info {
+            background: var(--light-blue);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 5rem 1rem 6rem;
+                min-height: 55vh;
+            }
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .services, .packages, .why-us, .testimonials, .contact-form, .types-section {
+                padding: 3rem 1rem;
+            }
+            .floating-btns {
+                bottom: 1rem;
+                right: 1rem;
+            }
+            .floating-btn {
+                padding: 0.9rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .logo {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrolling-banner">
+        <div class="scrolling-content">
+            🧹 شركة الأمان للتنظيف | خدم بالساعات الكويت | عماله منزليه بالساعه | خدامة بالساعة | خدم تنظيف بالساعات | 📞 66172896 | خدمة سريعة لجميع مناطق الكويت
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">🧼 شركة الأمان للتنظيف - خدم بالساعات الكويت</div>
+        <div class="phone-display" onclick="makePhoneCall('66172896')">
+            <i class="fas fa-phone"></i> 66172896
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hours-badge">
+            <i class="fas fa-clock"></i> خدم بالساعات - عماله منزليه بالساعه - خدامة بالساعة
+        </div>
+        <h1>شركة الأمان للتنظيف | خدم بالساعه في الكويت - عماله منزليه بالساعه - خدامة بالساعة | 66172896</h1>
+        <p>نوفر أفضل خدمات خدم بالساعه في الكويت، عماله منزليه بالساعه، خدامة بالساعة، وخدم تنظيف بالساعات لتنظيف الشقق والمنازل والمكاتب. نحن مكتب خدم بالساعات متخصص في توفير عاملات تنظيف بالساعة وخدم للتنظيف بأسعار مناسبة وجودة عالية.</p>
+        <div class="hero-buttons">
+            <button class="hero-btn secondary-btn" onclick="makePhoneCall('66172896')">
+                <i class="fas fa-phone-volume"></i>
+                اتصل الآن
+            </button>
+            <button class="hero-btn whatsapp-btn" onclick="trackWhatsAppClick('https://wa.me/96566172896')">
+                <i class="fab fa-whatsapp"></i>
+                واتساب فوري
+            </button>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2 class="section-title">خدماتنا المتخصصة في خدم بالساعات والتنظيف بالكويت</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-broom service-icon"></i>
+                <h3>خدم بالساعات - تنظيف فوري</h3>
+                <ul class="service-list">
+                    <li>نوفر خدمة خدم بالساعات لتنظيف المنازل والشقق</li>
+                    <li>عماله بالساعات مدربة في جميع مناطق الكويت</li>
+                    <li>تنظيف شامل للأرضيات والمطابخ والحمامات</li>
+                    <li>مرونة في المواعيد حسب طلبك</li>
+                    <li>أسعار تنافسية ومناسبة</li>
+                    <li>فريق عمل سريع ومتخصص</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hands-helping service-icon"></i>
+                <h3>خدامة بالساعة - عاملات تنظيف محترفات</h3>
+                <ul class="service-list">
+                    <li>اطلب خدامة بالساعة لتنظيف المنزل والمطبخ والحمامات</li>
+                    <li>عاملات تنظيف بالساعة بخبرة عالية وتدريب كامل</li>
+                    <li>خدمة منزلية آمنة ومضمونة</li>
+                    <li>تنظيف عميق وتعقيم كامل</li>
+                    <li>خبرة في التعامل مع جميع أنواع الأسطح</li>
+                    <li>إشراف مباشر على الجودة</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-building service-icon"></i>
+                <h3>خدم تنظيف بالساعات - للمنازل والمكاتب</h3>
+                <ul class="service-list">
+                    <li>نقدم خدم تنظيف بالساعات لتنظيف شامل وتعقيم</li>
+                    <li>ترتيب المنازل والمكاتب بأعلى جودة</li>
+                    <li>مكتب خدم بالساعات متخصص في جميع المحافظات</li>
+                    <li>تنظيف الزجاج والأثاث والمفروشات</li>
+                    <li>استخدام مواد تنظيف آمنة وفعالة</li>
+                    <li>خدمة سريعة وموثوقة</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="types-section">
+        <h2 class="section-title">جميع خدمات التنظيف والساعه التي نقدمها</h2>
+        <div class="types-grid">
+            <div class="type-item"><h3>خدم بالساعات</h3><p>عمالة مدربة لتنظيف المنازل والشقق</p></div>
+            <div class="type-item"><h3>خدامة بالساعة</h3><p>عاملات تنظيف محترفات بخبرة عالية</p></div>
+            <div class="type-item"><h3>خدم تنظيف بالساعات</h3><p>تنظيف شامل وتعقيم للفلل والمكاتب</p></div>
+            <div class="type-item"><h3>مكتب خدم بالساعات</h3><p>مكتب متخصص في توفير خدم بالساعه</p></div>
+            <div class="type-item"><h3>خدم بالساعة في الكويت</h3><p>تغطية جميع المحافظات والمناطق</p></div>
+            <div class="type-item"><h3>خدم للتنظيف</h3><p>خدم تنظيف متخصصة لكل أجزاء المنزل</p></div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <h2 class="section-title">لماذا تختار شركة الأمان للتنظيف؟</h2>
+        <div class="features">
+            <div class="feature-item"><i class="fas fa-check-circle feature-icon"></i><h3>خدمة 24 ساعة</h3><p>نعمل من 8 صباحاً حتى 10 مساءً لخدمتكم</p></div>
+            <div class="feature-item"><i class="fas fa-map-marker-alt feature-icon"></i><h3>تغطية جميع مناطق الكويت</h3><p>نخدم جميع المحافظات والمناطق السكنية</p></div>
+            <div class="feature-item"><i class="fas fa-user-graduate feature-icon"></i><h3>عمالة مدربة</h3><p>فريق عمل مدرب على أعلى مستويات النظافة</p></div>
+            <div class="feature-item"><i class="fas fa-tags feature-icon"></i><h3>أسعار مناسبة</h3><p>أسعار تنافسية وجودة ممتازة</p></div>
+        </div>
+    </section>
+
+    <section class="packages">
+        <h2 class="section-title">باقات خدم بالساعات والتنظيف</h2>
+        <div class="packages-grid">
+            <div class="package-card">
+                <h3 class="package-title">باقة تنظيف بالساعة</h3>
+                <div class="package-price">أسعار اقتصادية</div>
+                <ul class="package-features">
+                    <li>خدامة بالساعة لتنظيف المنزل</li>
+                    <li>عمالة منزلية بالساعة مدربة</li>
+                    <li>معاينة مجانية لتحديد الاحتياج</li>
+                    <li>مرونة في اختيار عدد الساعات</li>
+                    <li>خدمة سريعة فور الطلب</li>
+                </ul>
+                <button class="package-btn" onclick="makePhoneCall('66172896')">طلب الخدمة</button>
+            </div>
+            <div class="package-card">
+                <h3 class="package-title">باقة تنظيف شاملة</h3>
+                <div class="package-price">عروض خاصة</div>
+                <ul class="package-features">
+                    <li>خدم تنظيف بالساعات لجميع الغرف</li>
+                    <li>تعقيم وتنظيف عميق للمطبخ والحمامات</li>
+                    <li>فريق متكامل للتنظيف السريع</li>
+                    <li>خدمة ممتازة بأسعار منافسة</li>
+                    <li>ضمان جودة الخدمة</li>
+                </ul>
+                <button class="package-btn" onclick="makePhoneCall('66172896')">طلب الخدمة</button>
+            </div>
+            <div class="package-card">
+                <h3 class="package-title">باقة خدم بالساعات أسبوعية</h3>
+                <div class="package-price">أفضل العروض السنوية</div>
+                <ul class="package-features">
+                    <li>عمالة منزلية بالساعة زيارات منتظمة</li>
+                    <li>تنظيف مستمر للمنزل أو المكتب</li>
+                    <li>مكتب خدم بالساعات متابعة دورية</li>
+                    <li>خصم خاص للاشتراكات الأسبوعية</li>
+                    <li>عاملات تنظيف ثابتات بنفس الجودة</li>
+                </ul>
+                <button class="package-btn" onclick="makePhoneCall('66172896')">طلب الخدمة</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2 class="section-title">آراء عملائنا الكرام</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card"><p class="testimonial-text">"أفضل شركة خدم بالساعات في الكويت، تعاملت معهم لتنظيف المنزل، خدمة ممتازة وعمالة نظيفة ومحترمة."</p><p class="testimonial-author">- فاطمة العنزي</p></div>
+            <div class="testimonial-card"><p class="testimonial-text">"خدامة بالساعة محترفة جداً، نظفت المنزل بدقة عالية. أنصح بشركة الأمان للتنظيف وبشدة."</p><p class="testimonial-author">- سعد العتيبي</p></div>
+            <div class="testimonial-card"><p class="testimonial-text">"مكتب خدم بالساعات متعاون جداً، الاستجابة سريعة والأسعار معقولة. خدمة تنظيف بالساعات ممتازة."</p><p class="testimonial-author">- نورا الخالدي</p></div>
+        </div>
+    </section>
+
+    <section class="contact-form" id="contact">
+        <h2 class="section-title">اطلب خدمة بالساعات أو تنظيف فوري الآن</h2>
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="form-group"><label for="name">الاسم الكامل</label><input type="text" id="name" name="name" required></div>
+                <div class="form-group"><label for="phone">رقم الهاتف</label><input type="tel" id="phone" name="phone" required></div>
+                <div class="form-group"><label for="area">المنطقة بالكويت</label><input type="text" id="area" name="area" required></div>
+                <div class="form-group"><label for="service">نوع الخدمة المطلوبة</label>
+                    <select id="service" name="service" required>
+                        <option value="">اختر الخدمة</option>
+                        <option value="خدم بالساعات">خدم بالساعات</option>
+                        <option value="خدامة بالساعة">خدامة بالساعة</option>
+                        <option value="خدم تنظيف بالساعات">خدم تنظيف بالساعات</option>
+                        <option value="عمالة منزلية بالساعة">عمالة منزلية بالساعة</option>
+                        <option value="مكتب خدم بالساعات">مكتب خدم بالساعات</option>
+                    </select>
+                </div>
+                <div class="form-group"><label for="propertyType">نوع المكان</label>
+                    <select id="propertyType" name="propertyType"><option value="">اختر النوع</option><option value="منزل / شقة">منزل / شقة</option><option value="مكتب / شركة">مكتب / شركة</option><option value="فيلا">فيلا</option><option value="مصنع / مستودع">مصنع / مستودع</option></select>
+                </div>
+                <div class="form-group"><label for="message">تفاصيل الطلب (عدد الساعات، عدد العمال، أي تفاصيل إضافية)</label><textarea id="message" name="message" placeholder="اذكر عدد الساعات المطلوبة، عدد الغرف، أو أي تفاصيل إضافية..."></textarea></div>
+                <button type="submit" class="submit-btn">اطلب خدمة فورية</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-clock"></i> <strong>ساعات العمل:</strong> من 8 صباحاً حتى 10 مساءً
+            <br><br>
+            <i class="fas fa-map-pin"></i> <strong>نخدم جميع مناطق الكويت</strong> | خدم بالساعات - خدم بالساعة في الكويت - عماله بالساعات
+        </div>
+    </section>
+
+    <div class="search-tags">
+        <h3>كلمات بحث شائعة عن خدم بالساعات والتنظيف في الكويت</h3>
+        <div class="tags-container">
+            <span class="service-tag">خدم بالساعات</span><span class="service-tag">خدم بالساعه في الكويت</span><span class="service-tag">عماله منزليه بالساعه</span>
+            <span class="service-tag">خدامة بالساعة</span><span class="service-tag">خدم تنظيف بالساعات</span><span class="service-tag">مكتب خدم بالساعات</span>
+            <span class="service-tag">خدم للتنظيف</span><span class="service-tag">خدم بالساعة</span><span class="service-tag">تنظيف شقق الكويت</span>
+            <span class="service-tag">شركة تنظيف</span><span class="service-tag">عمالة بالساعات</span>
+        </div>
+    </div>
+
+    <div class="floating-btns">
+        <button class="floating-btn floating-secondary" onclick="makePhoneCall('66172896')">
+            <i class="fas fa-phone-volume"></i> اتصال فوري
+        </button>
+        <button class="floating-btn floating-whatsapp" onclick="trackWhatsAppClick('https://wa.me/96566172896')">
+            <i class="fab fa-whatsapp"></i> واتساب
+        </button>
+    </div>
+
+    <div class="simple-footer">
+        <p>شركة الأمان للتنظيف - خدم بالساعات الكويت - عماله منزليه بالساعه - خدامة بالساعة - خدم تنظيف بالساعات - مكتب خدم بالساعات - حلول متكاملة للتنظيف - خدمة سريعة لجميع مناطق الكويت</p>
+        <div class="footer-phone" onclick="makePhoneCall('66172896')"><i class="fas fa-phone"></i> 66172896</div>
+        <p>عمالة مدربة - خدمة فورية - أسعار مناسبة - تغطية جميع محافظات الكويت</p>
+        <p>جميع الحقوق محفوظة © 2026 شركة الأمان للتنظيف | خدم بالساعات الكويت</p>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            gtag('event', 'conversion', {
+                'send_to': 'AW-16663483973/4XXBCJmki7kcEMWs4ok-',
+                'value': 1.0,
+                'currency': 'USD'
+            });
+            gtag('event', 'conversion', {
+                'send_to': 'AW-16663483973/CZYtCJ7inbocEMWs4ok-'
+            });
+            alert('شكراً لتواصلكم مع شركة الأمان للتنظيف! سنقوم بالاتصال بكم لتأكيد الطلب وتحديد موعد الخدمة في أقرب وقت.');
+            this.reset();
+        });
+        
+        function makePhoneCall(phoneNumber) {
+            var cleanNumber = String(phoneNumber).replace(/[\s\-]/g, '');
+            if (!cleanNumber.startsWith('+') && !cleanNumber.startsWith('00')) {
+                if (cleanNumber.startsWith('965')) {
+                    cleanNumber = '+' + cleanNumber;
+                } else {
+                    cleanNumber = '+965' + cleanNumber;
+                }
+            }
+            var telUrl = 'tel:' + cleanNumber;
+            
+            if (typeof gtag_report_conversion === 'function') {
+                gtag_report_conversion(telUrl);
+            }
+            if (typeof gtag_report_conversion_2 === 'function') {
+                gtag_report_conversion_2(telUrl);
+            }
+            
+            setTimeout(function() {
+                window.location.href = telUrl;
+            }, 100);
+            return false;
+        }
+        
+        function trackWhatsAppClick(url) {
+            if (typeof gtag_report_conversion === 'function') {
+                gtag_report_conversion(url);
+            }
+            if (typeof gtag_report_conversion_2 === 'function') {
+                gtag_report_conversion_2(url);
+            }
+            setTimeout(function() {
+                window.open(url, '_blank');
+            }, 100);
+            return false;
+        }
+        
+        var phoneElements = document.querySelectorAll('[onclick*="makePhoneCall"]');
+        phoneElements.forEach(function(el) {
+            el.addEventListener('touchstart', function(e) {
+                e.preventDefault();
+                var phoneNumber = this.getAttribute('onclick').match(/'([^']+)'/)[1];
+                makePhoneCall(phoneNumber);
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>
